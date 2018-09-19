@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.ilidan'
+version '1.0'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile(
+            'junit:junit:4.12',
+            'org.springframework:spring-beans:5.0.9.RELEASE'
+    )
+
+}
