@@ -17,7 +17,7 @@ public class Demo1Test {
 //        BeanFactory bf = new XmlBeanFactory(resource);//该方法已经被废弃
 
         BeanFactory bf = new DefaultListableBeanFactory();
-        XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader((BeanDefinitionRegistry) bf);
+        XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader((DefaultListableBeanFactory) bf);//XmlBeanDefinitionReader应用于对资源文件的读取和注册
         reader.loadBeanDefinitions(resource);
 
         Student student = (Student) bf.getBean("student");
