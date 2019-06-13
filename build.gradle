@@ -15,7 +15,10 @@ repositories {
 dependencies {
     compile(
             'junit:junit:4.12',
-            'org.springframework:spring-beans:5.0.9.RELEASE'
+            'org.springframework:spring-beans:5.0.9.RELEASE',
+            'org.springframework:spring-aop:5.0.9.RELEASE',
+            'org.springframework:spring-core:5.0.9.RELEASE',
+            'cglib:cglib:3.2.10'
     )
 
 }
